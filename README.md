@@ -5,7 +5,7 @@ Overlays, a voice race engineer and a driving coach for iRacing, in one small Wi
 - **Overlays**: relative, standings, delta, fuel, inputs, track map with corner numbers, pit helper, lap log, flags, radio transcript and more. Drag them where you want them.
 - **Race engineer by voice**: lap times, fuel, flags, cars alongside, pit confirmations. A natural voice with a team-radio sound is included.
 - **Coach**: compares every lap with your best, corner by corner, and tells you where the time is.
-- **Optional AI**: with your own Anthropic API key, Claude can be your race engineer and answer questions you ask out loud. Everything else works without it.
+- **Optional AI**: with your own Anthropic API key, Claude can be your race engineer and answer questions you ask out loud. You tell him things the way you would a real engineer ("call me …", "no more jokes", "talk less in the race") and he remembers. Everything else works without it.
 
 ## Install
 
@@ -31,7 +31,7 @@ Pitwall runs on your PC. It talks to the internet only for these things:
 
 - to look for updates here;
 - to look up a track's official turn numbers the first time you drive it (only the track's name is sent);
-- if you add an Anthropic API key, to send your questions and lap data to Claude;
+- if you add an Anthropic API key, to send your questions and lap data to Claude, along with what you have told the engineer about yourself (what to call you, how you want him to work);
 - if you add a Google AI Studio key, to send the sentences the AI engineer speaks to Google, which sends them back as sound.
 
 ## Included third-party software
