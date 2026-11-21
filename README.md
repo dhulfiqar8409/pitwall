@@ -27,7 +27,12 @@ Pitwall updates itself: it looks here for a newer version and installs it when n
 
 ## Privacy
 
-Pitwall runs on your PC. It talks to the internet only to look for updates here, and, if you add an API key, to send your questions and lap data to Anthropic's Claude.
+Pitwall runs on your PC. It talks to the internet only for these things:
+
+- to look for updates here;
+- to look up a track's official turn numbers the first time you drive it (only the track's name is sent);
+- if you add an Anthropic API key, to send your questions and lap data to Claude;
+- if you add a Google AI Studio key, to send the sentences the AI engineer speaks to Google, which sends them back as sound.
 
 ## Included third-party software
 
@@ -36,5 +41,9 @@ The full Setup also installs these separate programs, unchanged, each under its 
 - [Piper](https://github.com/rhasspy/piper) text to speech (MIT), with espeak-ng (GPL-3.0-or-later) and ONNX Runtime (MIT)
 - Piper voices `en_US-ryan-high` and `en_US-hfc_male-medium` (CC BY-NC-SA 4.0: non-commercial use only)
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) (MIT) with OpenAI's Whisper large-v3-turbo model (MIT)
+
+## Data from others
+
+Turn numbers and corner names come from [Lovely Track Data](https://github.com/Lovely-Sim-Racing/lovely-track-data), © Lovely Sim Racing, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Pitwall does not include that data: each copy fetches the file for a track when it is first driven and keeps it on that PC.
 
 Pitwall is a hobby project, shared free of charge, with no warranty. It is not affiliated with iRacing.
